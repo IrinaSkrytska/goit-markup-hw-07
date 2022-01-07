@@ -27,9 +27,9 @@ body {
 	margin-bottom: -1px;
 }
 /*---------------------------------------HEADER----------------------------*/
-nav,
-.main-links,
-.main-contacts,
+.page-header__nav,
+.page-header__main-links,
+.page-header__main-contacts,
 header .container {
 	display: flex;
 	justify-content: space-between;
@@ -48,11 +48,11 @@ header .logo {
 	color: var(--active-color);
 	letter-spacing: 0.03em;
 }
-.logo-color {
+.logo__color {
 	color: var(--main-color);
 	display: inline-block;
 }
-.links {
+.page-header__link {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -63,10 +63,10 @@ header .logo {
 	padding: 32px 0;
 	position: relative;
 }
-.main-links li:last-child {
+.page-header__main-links {
 	margin: 0;
 }
-.underline::after {
+.page-header__link__underline::after {
 	content: "";
 	width: 48px;
 	height: 4px;
@@ -75,7 +75,7 @@ header .logo {
 	position: absolute;
 	bottom: -1px;
 }
-.contacts {
+.page-header__contact {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -87,19 +87,19 @@ header .logo {
 	align-items: center;
 }
 
-.main-contacts li:first-child {
+.page-header__main-contacts:first-child {
 	margin: 0;
 }
 header {
 	border-bottom: 1px solid #ececec;
 }
-.links:hover {
+.page-header__link:hover {
 	color: var(--active-color);
 }
-.contacts:hover {
+.page-header__contact:hover {
 	color: var(--active-color);
 }
-.mail-icon {
+.page-header__contact-icon {
 	fill: currentColor;
 	margin-right: 10px;
 }
@@ -115,7 +115,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.title {
+.hero__title {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
@@ -124,7 +124,7 @@ header {
 	max-width: 650px;
 	margin: 0 auto;
 }
-.title-button {
+.hero__button {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 1.9;
@@ -139,21 +139,21 @@ header {
 }
 /*-------------------------------BENEFITS-------------------------------------------*/
 
-.our-benefits {
+.benefits__thumb {
 	display: flex;
 }
 
-.benefits {
+.benefits__title {
 	font-weight: 700px;
 	font-size: 14px;
 	line-height: 1.1;
 	margin-right: 30px;
 }
-.advantages {
+.benefits__description {
 	margin-right: 30px;
 	width: 270px;
 }
-.sub-title {
+.benefits__info {
 	font-weight: 400px;
 	font-size: 14px;
 	line-height: 1.8;
@@ -165,14 +165,14 @@ header {
 	margin-right: 0;
 }
 /*----our mission------*/
-.our-mission {
+.mission {
 	display: flex;
 	justify-content: center;
 }
-.our-mission-section {
+.mission__section {
 	padding-top: 0;
 }
-.mission-image {
+.mission__image {
 	display: flex;
 	margin-right: 30px;
 	background: rgba(47, 48, 58, 0.8);
@@ -180,7 +180,7 @@ header {
 	width: 370px;
 	text-align: center;
 }
-.mission-text {
+.mission__title {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
@@ -194,7 +194,7 @@ header {
 	margin: 0;
 	padding-top: 27px;
 }
-.section-title {
+.section__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.7;
@@ -202,41 +202,41 @@ header {
 	margin-bottom: 50px;
 }
 /*-------------------------OUR TEAM------------------------------*/
-.team-section {
+.team__section {
 	background-color: #f5f4fa;
 }
 .team {
 	display: flex;
 }
-.team-items {
+.team__members {
 	text-align: center;
 	background-color: #fff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team-items:not(:last-child) {
+.team__members:not(:last-child) {
 	margin-right: 30px;
 }
-.sub-benefits {
-	font-size: 14px;
-	line-height: 1.7;
-}
-.team-thumb {
+.team__thumb {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.team-title {
+.team__name {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.9;
 }
-.team-text {
+.team__job {
 	font-size: 16px;
 	line-height: 1.9;
 	color: #757575;
 }
-.icons-design {
+.team__social-links {
+	display: flex;
+	justify-content: center;
+}
+.team__member-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -246,26 +246,26 @@ header {
 	fill: #afb1b8;
 	background: rgba(255, 255, 255, 0.1);
 }
-.icons-design:hover,
-.icons-design:focus {
+.team__member-link:hover,
+.team__member-link:focus {
 	background: var(--active-color);
 	fill: #fff;
 }
-.links-design:not(:first-child) {
+.team__member-social-networks:not(:first-child) {
 	margin-left: 10px;
 }
 /*---------------------------CUSTOMERS-----------------------------*/
 .customers {
 	display: flex;
 }
-.customers-item {
+.customers__meta {
 	width: 170px;
 	height: 92px;
 }
-.customers-item:not(:last-child) {
+.customers__meta:not(:last-child) {
 	margin-right: 30px;
 }
-.customers-link {
+.customers__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -275,20 +275,20 @@ header {
 	border-radius: 4px;
 	color: #afb1b8;
 }
-.customers-link:hover,
-.customers-link:focus {
+.customers__link:hover,
+.customers__link:focus {
 	color: var(--active-color);
 	border-color: var(--active-color);
 }
 
-.customers-icon {
+.customers__icon {
 	fill: currentColor;
 	width: 106px;
 	height: 60px;
 }
 
 /*---------------------FOOTER-----------------*/
-.logo-footer {
+.footer__logo {
 	display: inline-block;
 	color: #fff;
 }
@@ -317,16 +317,7 @@ header {
 	padding-top: 9px;
 }
 
-button:hover {
-	color: #fff;
-	background-color: #2196f3;
-}
-button:focus {
-	color: var(--main-color);
-	background-color: #f5f4fa;
-}
-
-.footer-title {
+.footer__title {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -335,15 +326,15 @@ button:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-.social-links {
+.footer__social-links {
 	display: flex;
 	justify-content: center;
 }
 
-.social-networks {
+.footer__social-networks {
 	margin-left: 70px;
 }
-.networks-design {
+.footer__network-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -353,13 +344,13 @@ button:focus {
 	background: rgba(255, 255, 255, 0.1);
 	fill: #fff;
 }
-.social-links-design:not(:last-child) {
+.footer__social-links:not(:last-child) {
 	margin-right: 10px;
 }
-.networks:hover {
+.footer__network-link:hover {
 	background-color: var(--active-color);
 }
-.footer-icons {
+.footer__icons {
 	display: flex;
 	margin-top: 20px;
 }
@@ -369,13 +360,21 @@ button:focus {
 	align-items: baseline;
 }
 /*----------------FOOTER E-MAIL-FORM-------------*/
-.subscribe-footer {
+.footer__subscription {
 	margin-left: auto;
 }
-.subscribe-form {
+.footer__form {
 	margin-top: 20px;
 }
-.e-mail-form {
+.footer__form-title {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.footer__e-mail-form {
 	display: flex;
 }
 .mail-input {
