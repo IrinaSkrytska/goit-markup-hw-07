@@ -77,8 +77,8 @@ body {
 }
 
 .logo__color {
-  color: #2196f3;
   display: inline-block;
+  color: #212121;
 }
 
 .page-header__link {
@@ -891,7 +891,8 @@ header {
 }
 
 .portfolio__option-button {
-  color: #212121;
+  font-family: Roboto;
+  font-style: normal;
   margin-bottom: 50px;
   font-weight: 500;
   font-size: 16px;
@@ -901,6 +902,11 @@ header {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   margin-right: 8px;
+}
+
+.portfolio__option-button:hover {
+  background-color: #2196f3;
+  color: #fff;
 }
 
 .clients {

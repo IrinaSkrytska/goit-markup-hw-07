@@ -9,8 +9,8 @@
 	line-height: 1.2;
 	color: $main-color;
 	letter-spacing: 0.03em;
-}
-.logo__color {
-	color: $active-color;
-	display: inline-block;
+	&__color {
+		display: inline-block;
+		color: $main-color;
+	}
 }
