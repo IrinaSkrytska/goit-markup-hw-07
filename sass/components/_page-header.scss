@@ -1,31 +1,28 @@
-header .logo {
-	display: flex;
-	margin-right: 93px;
-	align-items: center;
+.page-header__nav {
+	@extend %centered-content;
 }
-.logo {
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.2;
-	color: var(--active-color);
-	letter-spacing: 0.03em;
+.page-header__main-links {
+	@extend %centered-content;
 }
-.logo__color {
-	color: var(--main-color);
-	display: inline-block;
+.page-header__main-contacts {
+	@extend %centered-content;
+}
+.page-header__container {
+	@extend %centered-content;
 }
 .page-header__link {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
-	color: var(--main-color);
+	color: $main-color;
 	display: flex;
 	margin-right: 50px;
 	padding: 32px 0;
 	position: relative;
+	&:hover {
+		color: $active-color;
+	}
 }
 .page-header__main-links {
 	margin: 0;
@@ -34,7 +31,7 @@ header .logo {
 	content: "";
 	width: 48px;
 	height: 4px;
-	background: var(--active-color);
+	background: $active-color;
 	border-radius: 2px;
 	position: absolute;
 	bottom: -1px;
@@ -44,11 +41,14 @@ header .logo {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
-	color: var(--sec-active-color);
+	color: $sec-active-color;
 	padding: 32px 0;
 	margin-left: 50px;
 	display: flex;
 	align-items: center;
+	&:hover {
+		color: $active-color;
+	}
 }
 
 .page-header__main-contacts:first-child {
@@ -57,12 +57,7 @@ header .logo {
 header {
 	border-bottom: 1px solid #ececec;
 }
-.page-header__link:hover {
-	color: var(--active-color);
-}
-.page-header__contact:hover {
-	color: var(--active-color);
-}
+
 .page-header__contact-icon {
 	fill: currentColor;
 	margin-right: 10px;

@@ -3,3 +3,8 @@ $sec-color: #757575;
 $active-color: #2196f3;
 $sec-background-color: #2f303a;
 $sec-active-color: #757575;
+
+%centered-content {
+	display: flex;
+	justify-content: space-between;
+}

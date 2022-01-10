@@ -1,0 +1,77 @@
+.footer {
+	background: $sec-background-color;
+	padding: 60px 0;
+	&__container {
+		display: flex;
+		align-items: baseline;
+	}
+	&__logo {
+		display: inline-block;
+		color: #fff;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+	&__social-links {
+		display: flex;
+		justify-content: center;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__social-networks {
+		margin-left: 70px;
+	}
+	&__network-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.1);
+		fill: #fff;
+		&:hover {
+			background-color: $active-color;
+		}
+	}
+	&__icons {
+		display: flex;
+		margin-top: 20px;
+	}
+}
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	color: $active-color;
+	letter-spacing: 0.03em;
+}
+.address,
+.communication {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #ffffff;
+	background-color: $sec-background-color;
+	display: flex;
+}
+.address {
+	padding-top: 20px;
+}
+.communication {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: $sec-background-color;
+	padding-top: 9px;
+}

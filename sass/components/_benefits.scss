@@ -1,0 +1,26 @@
+.benefits {
+	&__thumb {
+		display: flex;
+	}
+	&__title {
+		font-weight: 700px;
+		font-size: 14px;
+		line-height: 1.1;
+		margin-right: 30px;
+	}
+	&__description {
+		margin-right: 30px;
+		width: 270px;
+	}
+	&__info {
+		font-weight: 400px;
+		font-size: 14px;
+		line-height: 1.8;
+		color: $sec-active-color;
+		padding-top: 10px;
+		letter-spacing: 0.03em;
+	}
+	&__description:last-child {
+		margin-right: 0;
+	}
+}

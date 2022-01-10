@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -8,11 +15,4 @@ ul li {
 button {
 	border: none;
 	cursor: pointer;
-}
-*,
-*::after,
-*::before {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
 }
