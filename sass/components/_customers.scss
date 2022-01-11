@@ -20,6 +20,7 @@
 		&:focus {
 			color: $active-color;
 			border-color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 

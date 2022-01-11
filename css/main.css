@@ -57,7 +57,7 @@ body {
   margin-bottom: -1px;
 }
 
-.logo {
+.header__logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,7 +76,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo__color {
+.header__logo__color {
   display: inline-block;
   color: #212121;
 }
@@ -98,6 +98,9 @@ body {
 
 .page-header__link:hover {
   color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__main-links {
@@ -135,6 +138,9 @@ body {
 
 .page-header__contact:hover {
   color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header__main-contacts:first-child {
@@ -312,6 +318,7 @@ header {
   font-size: 16px;
   line-height: 1.9;
   color: #757575;
+  margin-bottom: 16px;
 }
 
 .team__social-links {
@@ -349,6 +356,9 @@ header {
 .team__member-link:hover, .team__member-link:focus {
   background: #2196f3;
   fill: #fff;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__member-social-networks:not(:first-child) {
@@ -395,6 +405,9 @@ header {
 .customers__link:hover, .customers__link:focus {
   color: #2196f3;
   border-color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers__icon {
@@ -420,6 +433,17 @@ header {
 }
 
 .footer__logo {
+  margin-right: 70px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196f3;
+  letter-spacing: 0.03em;
+}
+
+.footer__logo__color {
   display: inline-block;
   color: #fff;
 }
@@ -476,6 +500,9 @@ header {
 
 .footer__network-link:hover {
   background-color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__icons {
@@ -484,16 +511,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #2196f3;
-  letter-spacing: 0.03em;
 }
 
 .address,
@@ -512,13 +529,13 @@ header {
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .communication {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer__subscription {
@@ -607,9 +624,9 @@ header {
   color: #ffffff;
   top: 0%;
   bottom: 0%;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+      -ms-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -699,6 +716,9 @@ header {
 .close-cross {
   width: 11px;
   height: 11px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-input {
@@ -733,8 +753,8 @@ header {
   border: 1px solid #2196f3;
 }
 
-.form-message .form-input:focus + svg {
-  fill: var #2196f3;
+.form-input:focus + svg {
+  fill: #2196f3;
 }
 
 .form-input-icon {
@@ -888,12 +908,12 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio__option-button {
   font-family: Roboto;
   font-style: normal;
-  margin-bottom: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -907,6 +927,9 @@ header {
 .portfolio__option-button:hover {
   background-color: #2196f3;
   color: #fff;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -972,5 +995,25 @@ img {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #2196f3;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  top: 0%;
+  bottom: 0%;
+  -webkit-transform: translateY(101%);
+      -ms-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 60px 24px;
 }
 /*# sourceMappingURL=main.css.map */

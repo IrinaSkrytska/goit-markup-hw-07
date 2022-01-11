@@ -6,6 +6,16 @@
 		align-items: baseline;
 	}
 	&__logo {
+		margin-right: 70px;
+		font-family: "Raleway", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.2;
+		color: $active-color;
+		letter-spacing: 0.03em;
+	}
+	&__logo__color {
 		display: inline-block;
 		color: #fff;
 	}
@@ -40,6 +50,7 @@
 		fill: #fff;
 		&:hover {
 			background-color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 	&__icons {
@@ -47,15 +58,7 @@
 		margin-top: 20px;
 	}
 }
-.logo {
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.2;
-	color: $active-color;
-	letter-spacing: 0.03em;
-}
+
 .address,
 .communication {
 	font-family: Roboto;
@@ -68,10 +71,10 @@
 	display: flex;
 }
 .address {
-	padding-top: 20px;
+	margin-top: 20px;
 }
 .communication {
 	color: rgba(255, 255, 255, 0.6);
 	background-color: $sec-background-color;
-	padding-top: 9px;
+	margin-top: 9px;
 }
