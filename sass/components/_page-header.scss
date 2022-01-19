@@ -1,14 +1,18 @@
 .page-header__nav {
-	@extend %centered-content;
+	display: flex;
+	justify-content: space-between;
 }
 .page-header__main-links {
-	@extend %centered-content;
+	display: flex;
+	justify-content: space-between;
 }
 .page-header__main-contacts {
-	@extend %centered-content;
+	display: flex;
+	justify-content: space-between;
 }
 .page-header__container {
-	@extend %centered-content;
+	display: flex;
+	justify-content: space-between;
 }
 .page-header__link {
 	font-style: normal;
